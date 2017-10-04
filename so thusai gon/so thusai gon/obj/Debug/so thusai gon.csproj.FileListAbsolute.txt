@@ -1,0 +1,10 @@
+C:\Users\Administrator\Documents\GitHub\contactsapp\so-thu-sai-gon-binh1204\so thusai gon\so thusai gon\bin\Debug\so thusai gon.exe.config
+C:\Users\Administrator\Documents\GitHub\contactsapp\so-thu-sai-gon-binh1204\so thusai gon\so thusai gon\bin\Debug\so thusai gon.exe
+C:\Users\Administrator\Documents\GitHub\contactsapp\so-thu-sai-gon-binh1204\so thusai gon\so thusai gon\bin\Debug\so thusai gon.pdb
+C:\Users\Administrator\Documents\GitHub\contactsapp\so-thu-sai-gon-binh1204\so thusai gon\so thusai gon\obj\Debug\so thusai gon.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\contactsapp\so-thu-sai-gon-binh1204\so thusai gon\so thusai gon\obj\Debug\so_thusai_gon.Form1.resources
+C:\Users\Administrator\Documents\GitHub\contactsapp\so-thu-sai-gon-binh1204\so thusai gon\so thusai gon\obj\Debug\so_thusai_gon.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\contactsapp\so-thu-sai-gon-binh1204\so thusai gon\so thusai gon\obj\Debug\so thusai gon.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\contactsapp\so-thu-sai-gon-binh1204\so thusai gon\so thusai gon\obj\Debug\so thusai gon.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\contactsapp\so-thu-sai-gon-binh1204\so thusai gon\so thusai gon\obj\Debug\so thusai gon.exe
+C:\Users\Administrator\Documents\GitHub\contactsapp\so-thu-sai-gon-binh1204\so thusai gon\so thusai gon\obj\Debug\so thusai gon.pdb
