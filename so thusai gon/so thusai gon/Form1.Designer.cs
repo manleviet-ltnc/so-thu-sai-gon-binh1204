@@ -38,6 +38,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTime = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hồSơToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuLoad = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,7 @@
             this.mnuCopy = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCut = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPaste = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblTime = new System.Windows.Forms.Label();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -144,6 +145,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(320, 228);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.lblTime, 2);
+            this.lblTime.Location = new System.Drawing.Point(3, 166);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(91, 13);
+            this.lblTime.TabIndex = 6;
+            this.lblTime.Text = "Bây giờ là ... ngày";
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -169,7 +180,7 @@
             // 
             this.mnuLoad.Image = ((System.Drawing.Image)(resources.GetObject("mnuLoad.Image")));
             this.mnuLoad.Name = "mnuLoad";
-            this.mnuLoad.Size = new System.Drawing.Size(152, 22);
+            this.mnuLoad.Size = new System.Drawing.Size(151, 22);
             this.mnuLoad.Text = "Tải danh sách";
             this.mnuLoad.Click += new System.EventHandler(this.mnuLoad_Click);
             // 
@@ -177,7 +188,7 @@
             // 
             this.mnuSave.Image = global::so_thusai_gon.Properties.Resources.if_save_173091;
             this.mnuSave.Name = "mnuSave";
-            this.mnuSave.Size = new System.Drawing.Size(152, 22);
+            this.mnuSave.Size = new System.Drawing.Size(151, 22);
             this.mnuSave.Text = "Lưu danh sách";
             this.mnuSave.Click += new System.EventHandler(this.Save);
             // 
@@ -185,7 +196,7 @@
             // 
             this.mnuClose.Image = ((System.Drawing.Image)(resources.GetObject("mnuClose.Image")));
             this.mnuClose.Name = "mnuClose";
-            this.mnuClose.Size = new System.Drawing.Size(152, 22);
+            this.mnuClose.Size = new System.Drawing.Size(151, 22);
             this.mnuClose.Text = "Kết thúc";
             this.mnuClose.Click += new System.EventHandler(this.mnuClose_Click);
             // 
@@ -194,7 +205,8 @@
             this.sửaĐổiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuCopy,
             this.mnuCut,
-            this.mnuPaste});
+            this.mnuPaste,
+            this.deleteToolStripMenuItem});
             this.sửaĐổiToolStripMenuItem.Name = "sửaĐổiToolStripMenuItem";
             this.sửaĐổiToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.sửaĐổiToolStripMenuItem.Text = "Sửa Đổi";
@@ -220,15 +232,12 @@
             this.mnuPaste.Size = new System.Drawing.Size(152, 22);
             this.mnuPaste.Text = "Dán";
             // 
-            // lblTime
+            // deleteToolStripMenuItem
             // 
-            this.lblTime.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblTime, 2);
-            this.lblTime.Location = new System.Drawing.Point(3, 166);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(91, 13);
-            this.lblTime.TabIndex = 6;
-            this.lblTime.Text = "Bây giờ là ... ngày";
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // timer1
             // 
@@ -280,6 +289,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuPaste;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
     }
 }
 

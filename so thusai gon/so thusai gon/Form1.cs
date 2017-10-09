@@ -45,7 +45,7 @@ namespace so_thusai_gon
             else
                 e.Effect = DragDropEffects.Move;
         }
-
+        bool isItemChange = false;
         private void lstDanhSach_DragDrop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.Text))
@@ -54,7 +54,7 @@ namespace so_thusai_gon
                 lb.Items.Add(e.Data.GetData(DataFormats.Text));
             }
         }
-
+        bool isSave = true;
         private void Save(object sender, EventArgs e)
         {
             // mo tap tin
@@ -111,5 +111,38 @@ namespace so_thusai_gon
                                   DateTime.Now.Month,
                                   DateTime.Now.Year);
         }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lstDanhSach.SelectedIndex != -1)
+                lstDanhSach.Items.RemoveAt(lstDanhSach.SelectedIndex);
+            isItemChange = true;
+        }
+            
+          private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+            {
+            if (isItemChange == true)
+                if(isSave)
+                {
+                    DialogResult result = MessageBox.Show("bạn có muốn lưu danh sách?",
+                                                          "",
+                                                          MessageBoxButtons.YesNoCancel,
+                                                          MessageBoxIcon.None);
+                    if (result == DialogResult.Yes)
+                    {
+                        Save(sender, e);
+                        e.Cancel = false;
+
+                    }
+                    else if (result == DialogResult.No)
+                        e.Cancel = false;
+                    else
+                        e.Cancel = true;
+
+
+                }
+            }
+        
+        }
     }
-}
+
